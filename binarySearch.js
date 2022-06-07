@@ -1,6 +1,7 @@
+// searching in sorted array
 function binarySearch(arr, target) {
   let leftIndex = 0;
-  let rightIndex = arr.length;
+  let rightIndex = arr.length - 1;
   while (leftIndex <= rightIndex) {
     let middleIndex = Math.floor((leftIndex + rightIndex) / 2); // Big-O - O(logn)
     if (target === arr[middleIndex]) {
